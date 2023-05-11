@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Presentacion</title>
+    <style>
+        .item1 {grid-area: photo;}
+        .item2 {grid-area: logo-lol;}
+        .item3 {grid-area: logo-jinx;}
+        .item4 {grid-area: descripcion;}
+
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+            'photo photo logo-lol logo-lol logo-lol logo-lol'
+            'photo photo descripcion descripcion descripcion descripcion'
+            'logo-jinx logo-jinx descripcion descripcion descripcion descripcion'
+            ;
+            gap: 50px;
+            border-width: 10cm;
+            border-color: black;
+            background-image: url(https://images6.alphacoders.com/118/1188254.jpg);
+            background-repeat: no-repeat;
+            padding: 100px;
+            width: max-content;
+        }
+
+        .item3{
+            display: flex;
+            justify-content: center;
+        }
+
+        .item1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .item2{
+            display: flex;
+            width: 100%;
+        }
+
+        .item4 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 1000px;
+            font-size: 50px;
+            height: auto;
+            word-break: break-all;
+            color: rgb(198, 221, 223);
+        }
+
+        .photo-jinx {
+            width: 700px;
+            height: 700px;
+            border-radius: 50%;
+            border:10px solid #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">
+            <img src="https://www.egames.news/__export/1639607022518/sites/debate/img/2021/12/15/un_cosplay_de_la_serie_de_arcane_nos_permite_ver_a_jinx_en_el_mundo_real.jpg_1902800913.jpg" alt="photo-jinx" class="photo-jinx">
+        </div>  
+        <div class="item2">
+            <img src="https://www.freepnglogos.com/uploads/lol-logo-png/league-of-legends-riot-games-logo-5.PNG" alt="logo-lol" class="logo-lol">
+        </div>
+        <div class="item3">     
+            <img src="https://i.ibb.co/MVLGGsx/4fec008b21db32f69490d45d935b78d1-removebg-preview.png" alt="4fec008b21db32f69490d45d935b78d1-removebg-preview" class="logo-jinx">
+        </div>
+        <div class="item4">
+            <p class="Rol">
+                Rol: Tirador
+            </p>
+            <p class="descripcion">
+                Descripción: Jinx, una maniática e impulsiva criminal de Zaun, vive para sembrar el caos sin pararse a pensar en las consecuencias, Con un arsenal de juguetes letales a su disposición, desata las explosiones más brillantes y los estallidos más ruidosos para dejar un rastro de caos y pánico a su paso
+            </p>
+        </div>
+    </div>
+
+
+
+    
+</body>
+</html>
